@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Title = "Show";
+}
+
+<h2>Show</h2>
+
+
+@*<link href="~/content/htmledit/themes/default/css/ueditor.css" rel="stylesheet" />*@
+
+<link href="~/content/htmledit/themes/iframe.css" rel="stylesheet" />
+<link href="~/content/htmledit/third-party/SyntaxHighlighter/shCoreDefault.css" rel="stylesheet" />
+<script src="~/content/htmledit/third-party/SyntaxHighlighter/shCore.js"></script>
+
+
+@*<script src="~/content/htmledit/third-party/codemirror/codemirror.js"></script>
+<script src="~/content/htmledit/lang/zh-cn/zh-cn.js"></script>
+<script src="~/content/htmledit/ueditor.config.js"></script>
+<script src="~/content/htmledit/ueditor.all.min.js"></script>
+<script src="~/content/htmledit/third-party/zeroclipboard/ZeroClipboard.js"></script>*@
+
+
+<div style="margin-top:50px">
+
+    @Html.Raw(ViewBag.content)
+
+</div>
+
+
+
+<script>
+
+    SyntaxHighlighter.all();
+
+</script>
+
