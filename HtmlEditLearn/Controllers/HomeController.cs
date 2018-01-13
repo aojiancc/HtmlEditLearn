@@ -92,12 +92,9 @@ namespace HtmlEditLearn.Controllers
         [ValidateInput(false)]
         public ActionResult Show(string content)
         {
-
             ViewBag.content = content;
-
             return View();
         }
-
 
 
 
